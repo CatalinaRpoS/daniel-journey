@@ -93,7 +93,33 @@ img {
 
 (align:&quot;=&gt;&lt;=&quot;)[[[¡Continuar!-&gt;Escena3-1]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="2" name="E2SB" tags="" position="700,1000" size="100,100">(set: $eligioA to false)
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="2" name="E2SB" tags="" position="700,1000" size="100,100">(set: $eligioA to false)
 &lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;buscando-en-el-mapa&quot;&gt;Buscando en el Mapa&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;buscando-en-el-mapa&quot;&gt;
@@ -123,7 +149,33 @@ img {
 
 (align:&quot;=&gt;&lt;=&quot;)[[[¡Continuar!-&gt;Escena3-2]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="3" name="E3SA" tags="" position="1100,800" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="3" name="E3SA" tags="" position="1100,800" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;vamos-lotso&quot;&gt;¡Vamos, Lotso!&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;vamos-lotso&quot;&gt;
 (align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://catalinarpos.github.io/daniel-journey/images/daniel-22.png&quot; alt=&quot;Un niño serio corriendo con un oso rosado en la mano&quot;&gt;]
@@ -132,7 +184,33 @@ img {
 
 (align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos!-&gt;E3SA-2]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="4" name="E3SA-2" tags="" position="1300,800" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="4" name="E3SA-2" tags="" position="1300,800" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;recibiendo-ayuda&quot;&gt;Recibiendo Ayuda&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;recibiendo-ayuda&quot;&gt;
 Daniel y Lotso empezaron a correr a lo largo del estrecho camino en la construcción, sin darse cuenta que algunas tablas debajo de ellos tambaleaban y podrían caerse en cualquier momento, pasar por aquel camino sin precauciones eran muy peligroso. Un trabajador de la obra los vio y detuvo a Daniel antes de que se cayera, poniéndose en frente de él y haciéndole señas con las manos.
@@ -153,14 +231,66 @@ Una vez salieron, Daniel le agradeció con una sonrisa y volvió a correr en dir
 
 (align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena4]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="5" name="E3SB" tags="" position="1100,1000" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="5" name="E3SB" tags="" position="1100,1000" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;una-nueva-idea&quot;&gt;Una Nueva Idea&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;una-nueva-idea&quot;&gt;
 &#39;&#39;Daniel:&#39;&#39; (//sonriendo//) ¡Ya sé qué vamos a hacer, Lotso! Hablaremos con alguien que esté trabajando en la construcción y le pediremos ayuda para pasar el camino, diciéndole que mamá y papá nos están esperando en la escuela y tenemos mucha prisa.
 
 (align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos!-&gt;E3SB-2]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="6" name="E3SB-2" tags="" position="1300,1000" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="6" name="E3SB-2" tags="" position="1300,1000" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;pidiendo-ayuda&quot;&gt;Pidiendo Ayuda&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;pidiendo-ayuda&quot;&gt;
 
@@ -182,14 +312,66 @@ Después de la breve conversación, Daniel, Lotso y el trabajador de la construc
 
 (align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena4]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="7" name="E4SA" tags="" position="1700,600" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="7" name="E4SA" tags="" position="1700,600" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;vamos-lotso&quot;&gt;¡Vamos, Lotso!&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;vamos-lotso&quot;&gt;
 &#39;&#39;Daniel:&#39;&#39; ¡Lotso, vamos a la tienda de juguetes! Mamá y papá saben lo mucho que me gusta ir allí, nos deben estar esperando. 
 
 (align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos a Jugar!-&gt;E4SA-2]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="8" name="E4SA-2" tags="" position="1900,500" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="8" name="E4SA-2" tags="" position="1900,500" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;encontrando-el-camino&quot;&gt;Encontrando el Camino&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;encontrando-el-camino&quot;&gt;
 Daniel volvió a sacar el mapa que le habían regalado sus padres y lo extendió sobre el suelo un momento, revisando la posición donde estaba la escuela y el camino que tendrían que recorrer antes de llegar a la tienda de juguetes.
@@ -272,6 +454,23 @@ Daniel volvió a sacar el mapa que le habían regalado sus padres y lo extendió
         break;
     }
   });
+  
+  // Se pueda hacer focus
+    document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+      region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    });
+      
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+
+    link.addEventListener(&quot;keydown&quot;, e =&gt; {
+      if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+        e.preventDefault();
+        link.click();
+      }
+    });
+  });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="9" name="E4SA-2-A" tags="" position="2100,400" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;una-leccion-aprendida&quot;&gt;Una Lección Aprendida&lt;/h1&gt;
@@ -301,7 +500,33 @@ Daniel volvió a sacar el mapa que le habían regalado sus padres y lo extendió
 
 (align:&quot;=&gt;&lt;=&quot;)[[[Continuar!-&gt;Escena5-1]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="10" name="E4SA-2-B" tags="" position="2100,600" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="10" name="E4SA-2-B" tags="" position="2100,600" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;una-nueva-pista&quot;&gt;Una Nueva Pista&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;una-nueva-pista&quot;&gt;
 &#39;&#39;Daniel:&#39;&#39; Tienes razón, Lotso, no podemos dejar de concentrarnos en la misión que estamos cumpliendo, ¡busquemos a mamá y a papá!
@@ -318,7 +543,33 @@ Daniel volvió a sacar el mapa que le habían regalado sus padres y lo extendió
 
 (align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena5-2]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="11" name="E4SB" tags="" position="1700,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="11" name="E4SB" tags="" position="1700,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;vamos-lotso&quot;&gt;¡Vamos, Lotso!&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;vamos-lotso&quot;&gt;
 &#39;&#39;Daniel:&#39;&#39; ¡Lotso, vayamos al parque de diversiones! Si mami y papi nos están esperando allá, podríamos jugar un rato todos juntos antes de regresar a casa.
@@ -327,7 +578,33 @@ Daniel volvió a sacar el mapa que le habían regalado sus padres y lo extendió
 
 (align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos al Parque!-&gt;E4SB-2]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="12" name="E4SB-2" tags="" position="1900,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="12" name="E4SB-2" tags="" position="1900,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;se-retrasa-la-mision&quot;&gt;¿Se Retrasa la Misión?&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;se-retrasa-la-mision&quot;&gt;
 Daniel sacó de su collar el mapa que le habían entregado sus padres y lo extendió sobre el suelo una vez más, buscando el camino que tendría que recorrer para llegar desde la escuela hasta el parque de diversiones, donde podría encontrar a alguno de sus padres o a los dos, que todavía debían estarlo buscando.
@@ -414,6 +691,23 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
         break;
     }
   });
+  
+  // Se pueda hacer focus
+    document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+      region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    });
+      
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;))(&quot;tw-link&quot;).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+
+    link.addEventListener(&quot;keydown&quot;, e =&gt; {
+      if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+        e.preventDefault();
+        link.click();
+      }
+    });
+  });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="13" name="E4SB-2-A" tags="" position="2100,800" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;una-leccion-por-aprender&quot;&gt;Una Lección por Aprender&lt;/h1&gt;
@@ -450,7 +744,33 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
 
 (align:&quot;=&gt;&lt;=&quot;)[[[Continuar!-&gt;Escena5-1]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="14" name="E4SB-2-B" tags="" position="2100,1000" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="14" name="E4SB-2-B" tags="" position="2100,1000" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;buenas-noticias&quot;&gt;¡Buenas Noticias!&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;buenas-noticias&quot;&gt;
 &#39;&#39;Daniel:&#39;&#39; Tienes razón, Lotso, no podemos desconcentrarnos de nuestra misión, ¡hay que seguir buscando a mami y papi!
@@ -471,17 +791,69 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
 
 (align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena5-3]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="15" name="E4SC" tags="" position="1700,1200" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="15" name="E4SC" tags="" position="1700,1200" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;una-decision-importante&quot;&gt;Una Decisión Importante&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;una-decision-importante&quot;&gt;
 &#39;&#39;Daniel:&#39;&#39; (//pensativo//) ¿Sabes qué, Lotso? Creo que deberíamos ir a casa, seguramente mamá y papá se encontrarán juntos allá y nos estarán esperando, ¡no perdamos más tiempo! 
 
 (align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos a Casa!-&gt;E4SC-2]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="16" name="E4SC-2" tags="" position="2100,1200" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="16" name="E4SC-2" tags="" position="2100,1200" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;una-buena-decision&quot;&gt;Una Buena Decisión&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;una-buena-decision&quot;&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[Después de decidir que tomarían el camino de regreso a casa, Daniel miró por última vez el mapa que mamá y papá le habían regalado, haciendo un recuento de todos los esfuerzos que él y Lotso habían realizado en esta misión; se encontraba agotado, pero sabía que no podía detenerse ahora, pues estaba muy cerca de volver a encontrarse con sus padres y dar por terminada esta inesperada aventura. 
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[Después de decidir que tomarían el camino de regreso a casa, Daniel miró por última vez el mapa que mamá y papá le habían regalado, haciendo un recuento de todos los esfuerzos que él y Lotso habían realizado en esta misión; se encontraba agotado, pero sabía que no podía detenerse ahora, pues estaba muy cerca de volver a encontrarse con sus padres y dar por terminada esta inesperada aventura.]
 
 (align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://catalinarpos.github.io/daniel-journey/images/daniel-21.png&quot; alt=&quot;Un niño se imagina a sus padres abrazándolo mientras camina con su oso de peluche&quot;&gt;]
 
@@ -489,7 +861,33 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
 
 (align:&quot;=&gt;&lt;=&quot;)[[[¡Continuar!-&gt;Escena5-1]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="17" name="Escena1" tags="" position="300,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="17" name="Escena1" tags="" position="300,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
   &lt;h1 class=&quot;titulo-principal&quot; id=&quot;empieza-viaje&quot;&gt;Embarcándonos en el viaje&lt;/h1&gt;
   &lt;div role=&quot;region&quot; aria-labelledby=&quot;empieza-viaje&quot;&gt;
     ¡Buenos días! ¿Llegaste hace mucho rato?
@@ -510,7 +908,33 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
 
     (align:&quot;=&gt;&lt;=&quot;)[[[Comenzar la historia-&gt;Escena2]]]
    &lt;/div&gt;  
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="18" name="Escena2" tags="" position="500,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="18" name="Escena2" tags="" position="500,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
   &lt;h1 class=&quot;titulo-principal&quot; id=&quot;llegando-a-la-plaza&quot;&gt;Llegando a la Plaza de la Ciudad&lt;/h1&gt;
   &lt;div role=&quot;region&quot; aria-labelledby=&quot;llegando-a-la-plaza&quot;&gt;
     Daniel y sus padres llegan a un punto de especial interés turístico en su recorrido, así que todo el grupo se detiene a escuchar una explicación del guía, todos lucen interesados en el tema menos Daniel, que pudo escuchar atentamente solo durante unos pocos minutos, pues inmediatamente se dispuso a observar a su alrededor otras cosas que le llamaran más la atención que una charla de 10 minutos.
@@ -529,10 +953,110 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+
+  // Se pueda hacer focus
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+    
+ Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  // Aplicar manejador de teclado
+  let optionLinks = Array.from(document.getElementsByTagName(&quot;tw-link&quot;));
+  let currentOption = 0;
+
+  function focusOption(idx) {
+    if (optionLinks.length === 0) return;
+    currentOption = (idx + optionLinks.length) % optionLinks.length;
+    optionLinks[currentOption].focus();
+  }
+
+  function selectOptionByLetter(text) {
+    for (let i = 0; i &lt; optionLinks.length; i++) {
+      if (optionLinks[i].textContent.trim() === text.trim()) {
+        currentOption = i;
+        optionLinks[i].focus();
+        break;
+      }
+    }
+  }
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;ArrowDown&quot;:
+        e.preventDefault();
+        focusOption(currentOption + 1);
+        break;
+      case &quot;ArrowUp&quot;:
+        e.preventDefault();
+        focusOption(currentOption - 1);
+        break;
+      case &quot;A&quot;:
+      case &quot;a&quot;:
+        e.preventDefault();
+        selectOptionByLetter(&quot;Opción A:&quot;);
+        break;
+      case &quot;B&quot;:
+      case &quot;b&quot;:
+        e.preventDefault();
+        selectOptionByLetter(&quot;Opción B:&quot;);
+        break;
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="19" name="Escena3-1" tags="" position="900,700" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;h1 class=&quot;titulo-principal&quot; id=&quot;que-paso-despues&quot;&gt;¿Qué sucedió después?&lt;/h1&gt;
+&lt;div role=&quot;region&quot; aria-labelledby=&quot;que-paso-despues&quot;&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[La tarde caía sobre la plaza de la ciudad, Daniel y Lotso habían estado dando vueltas alrededor del lugar varias veces, pero no vieron a mamá y papá, ni a otra persona conocida que los hubiera acompañado en el recorrido. Ambos estaban preocupados, porque se haría tarde muy pronto y no habían adelantado nada en su nueva misión.]
+
+&#39;&#39;Daniel:&#39;&#39; Parece que mamá y papá ya no se encuentran por aquí cerca, ¿crees que se hayan ido muy lejos?
+
+&#39;&#39;Lotso:&#39;&#39; Seguramente se preocuparon mucho cuando se dieron cuenta que no estabas con ellos y decidieron recorrer toda la ciudad buscándote, &#39;&#39;su rostro se ilumina por un momento&#39;&#39;. ¡Lo había olvidado! Una vez los escuché diciendo que si algo así ocurría, comenzarían a buscarte en tu escuela, tal vez si vamos lo suficientemente rápido podamos alcanzarlos, ¿sabes cómo ir a la escuela desde aquí?
+
+&#39;&#39;Daniel:&#39;&#39; Nunca antes había hecho ese paseo, pero creo que si revisamos el mapa, podemos encontrar alguna pista. 
+
+(align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://catalinarpos.github.io/daniel-journey/images/daniel-9.png&quot; alt=&quot;Un niño feliz mirando un mapa con una escuela de fondo&quot;&gt;]
+
+(align:&quot;==&gt;&quot;)+(box:&quot;X&quot;)[Daniel sacó el mapa de su collar y lo extendió sobre el suelo; sus padres habían señalado varios lugares importantes para que Daniel los viera con más facilidad, la escuela estaba señalada con un círculo rojo  y no parecía estar muy lejos de la plaza.]
+
+&#39;&#39;Daniel:&#39;&#39; (//señalando la escuela con el dedo en el mapa//) ¡Aquí está! Creo que podemos ir hacia la escuela cruzando derecho las próximas cuadras y la encontraremos después de la señal azul, ¡vayamos allá!
+
+(align:&quot;==&gt;&quot;)+(box:&quot;X&quot;)[Después de guardar el mapa, Lotso y Daniel se dirigen hacia la escuela siguiendo la ruta que habían visto, pero después de avanzar un poco, se dieron cuenta de que había un obstáculo inesperado entre la última cuadra y la señal azul que esperaban encontrar antes de llegar a la escuela: el paso de la calle estaba cerrado por una construcción y un cartel grande decía lo siguiente: “el paso está restringido, solo pueden pasar los menores acompañados de un adulto o deberán dar la vuelta y pasar por la calle a la derecha”. ]
+
+(align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://catalinarpos.github.io/daniel-journey/images/daniel-10.png&quot; alt=&quot;Un niño con cara seria mirando una señal de prohibido el paso&quot;&gt;]
+
+Daniel se encontraba muy impaciente por llegar hasta la escuela, pues tal vez sus padres todavía estaban ahí. Mientras sostenía a Lotso en sus manos, se preguntó qué iba a hacer.
+
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[(text-style:&quot;bold&quot;,&quot;italic&quot;)[¿Cuál es la siguiente acción de Daniel frente a la calle cerrada por la construcción?]]
+&lt;div class=&quot;opciones&quot;&gt;
+[[Opción A:-&gt;E3SA]] Daniel corre e intenta cruzar el camino restringido solo, esperando que nadie se dé cuenta y pueda continuar hacia la señal azul que está más adelante.
+&lt;hr&gt;[[Opción B:-&gt;E3SB]] En ese momento, Daniel recuerda los cuatro pasos que le había enseñado la niña en la plaza de la ciudad, y mirando los colores de su chaqueta, trató de permanecer calmado y elaboró un pequeño plan para pasar por el camino restringido sin necesidad de dar la vuelta por la calle de la derecha.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/main&gt;
 
 &lt;script&gt;
 (function () {
   &#39;use strict&#39;;
+  
+  // Se pueda hacer focus
+    document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+      region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    });
 
   let currentIndex = 0;
 
@@ -586,93 +1110,17 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
         break;
     }
   });
-})();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="19" name="Escena3-1" tags="" position="900,700" size="100,100">&lt;main role=&quot;main&quot;&gt;
-&lt;h1 class=&quot;titulo-principal&quot; id=&quot;que-paso-despues&quot;&gt;¿Qué sucedió después?&lt;/h1&gt;
-&lt;div role=&quot;region&quot; aria-labelledby=&quot;que-paso-despues&quot;&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[La tarde caía sobre la plaza de la ciudad, Daniel y Lotso habían estado dando vueltas alrededor del lugar varias veces, pero no vieron a mamá y papá, ni a otra persona conocida que los hubiera acompañado en el recorrido. Ambos estaban preocupados, porque se haría tarde muy pronto y no habían adelantado nada en su nueva misión.]
+    
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
 
-&#39;&#39;Daniel:&#39;&#39; Parece que mamá y papá ya no se encuentran por aquí cerca, ¿crees que se hayan ido muy lejos?
-
-&#39;&#39;Lotso:&#39;&#39; Seguramente se preocuparon mucho cuando se dieron cuenta que no estabas con ellos y decidieron recorrer toda la ciudad buscándote, &#39;&#39;su rostro se ilumina por un momento&#39;&#39;. ¡Lo había olvidado! Una vez los escuché diciendo que si algo así ocurría, comenzarían a buscarte en tu escuela, tal vez si vamos lo suficientemente rápido podamos alcanzarlos, ¿sabes cómo ir a la escuela desde aquí?
-
-&#39;&#39;Daniel:&#39;&#39; Nunca antes había hecho ese paseo, pero creo que si revisamos el mapa, podemos encontrar alguna pista. 
-
-(align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://catalinarpos.github.io/daniel-journey/images/daniel-9.png&quot; alt=&quot;Un niño feliz mirando un mapa con una escuela de fondo&quot;&gt;]
-
-(align:&quot;==&gt;&quot;)+(box:&quot;X&quot;)[Daniel sacó el mapa de su collar y lo extendió sobre el suelo; sus padres habían señalado varios lugares importantes para que Daniel los viera con más facilidad, la escuela estaba señalada con un círculo rojo  y no parecía estar muy lejos de la plaza.]
-
-&#39;&#39;Daniel:&#39;&#39; (//señalando la escuela con el dedo en el mapa//) ¡Aquí está! Creo que podemos ir hacia la escuela cruzando derecho las próximas cuadras y la encontraremos después de la señal azul, ¡vayamos allá!
-
-(align:&quot;==&gt;&quot;)+(box:&quot;X&quot;)[Después de guardar el mapa, Lotso y Daniel se dirigen hacia la escuela siguiendo la ruta que habían visto, pero después de avanzar un poco, se dieron cuenta de que había un obstáculo inesperado entre la última cuadra y la señal azul que esperaban encontrar antes de llegar a la escuela: el paso de la calle estaba cerrado por una construcción y un cartel grande decía lo siguiente: “el paso está restringido, solo pueden pasar los menores acompañados de un adulto o deberán dar la vuelta y pasar por la calle a la derecha”. ]
-
-(align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://catalinarpos.github.io/daniel-journey/images/daniel-10.png&quot; alt=&quot;Un niño con cara seria mirando una señal de prohibido el paso&quot;&gt;]
-
-Daniel se encontraba muy impaciente por llegar hasta la escuela, pues tal vez sus padres todavía estaban ahí. Mientras sostenía a Lotso en sus manos, se preguntó qué iba a hacer.
-
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[(text-style:&quot;bold&quot;,&quot;italic&quot;)[¿Cuál es la siguiente acción de Daniel frente a la calle cerrada por la construcción?]]
-&lt;div class=&quot;opciones&quot;&gt;
-[[Opción A:-&gt;E3SA]] Daniel corre e intenta cruzar el camino restringido solo, esperando que nadie se dé cuenta y pueda continuar hacia la señal azul que está más adelante.
-&lt;hr&gt;[[Opción B:-&gt;E3SB]] En ese momento, Daniel recuerda los cuatro pasos que le había enseñado la niña en la plaza de la ciudad, y mirando los colores de su chaqueta, trató de permanecer calmado y elaboró un pequeño plan para pasar por el camino restringido sin necesidad de dar la vuelta por la calle de la derecha.
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/main&gt;
-
-&lt;script&gt;
-(function () {
-  &#39;use strict&#39;;
-
-  let currentIndex = 0;
-
-  function obtenerOpciones() {
-    return Array.from(document.getElementsByTagName(&quot;tw-link&quot;));
-  }
-
-  function enfocarOpcion(index) {
-    const opciones = obtenerOpciones();
-    if (opciones.length === 0) return;
-    currentIndex = ((index % opciones.length) + opciones.length) % opciones.length; // para evitar negativos
-    opciones[currentIndex].focus();
-  }
-
-  function seleccionarOpcionPorTexto(texto) {
-    const opciones = obtenerOpciones();
-    for (let i = 0; i &lt; opciones.length; i++) {
-      if (opciones[i].textContent.trim() === texto.trim()) {
-        currentIndex = i;
-        opciones[i].focus();
-        break;
+    link.addEventListener(&quot;keydown&quot;, e =&gt; {
+      if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+        e.preventDefault();
+        link.click();
       }
-    }
-  }
-
-  document.addEventListener(&#39;keydown&#39;, function (e) {
-    const opciones = obtenerOpciones();
-    if (opciones.length === 0) return;
-
-    switch (e.key) {
-      case &#39;ArrowDown&#39;:
-        e.preventDefault();
-        enfocarOpcion(currentIndex + 1);
-        break;
-
-      case &#39;ArrowUp&#39;:
-        e.preventDefault();
-        enfocarOpcion(currentIndex - 1);
-        break;
-
-      case &#39;a&#39;:
-      case &#39;A&#39;:
-        e.preventDefault();
-        seleccionarOpcionPorTexto(&quot;Opción A:&quot;);
-        break;
-
-      case &#39;b&#39;:
-      case &#39;B&#39;:
-        e.preventDefault();
-        seleccionarOpcionPorTexto(&quot;Opción B:&quot;);
-        break;
-    }
+    });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="20" name="Escena3-2" tags="" position="900,1100" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -760,6 +1208,23 @@ Daniel se encontraba muy impaciente por llegar hasta la escuela, pues tal vez su
         break;
     }
   });
+  
+  // Se pueda hacer focus
+    document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+      region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    });
+    
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+
+    link.addEventListener(&quot;keydown&quot;, e =&gt; {
+      if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+        e.preventDefault();
+        link.click();
+      }
+    });
+  });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="21" name="Escena4" tags="" position="1500,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;una-nueva-pista&quot;&gt;Una Nueva Pista&lt;/h1&gt;
@@ -843,6 +1308,24 @@ Daniel y Lotso llegaron a la escuela un rato después de haber atravesado la con
         break;
     }
   });
+  
+  // Se pueda hacer focus
+    document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+      region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    });
+        
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+
+    link.addEventListener(&quot;keydown&quot;, e =&gt; {
+      if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+        e.preventDefault();
+        link.click();
+      }
+    });
+  });
+    
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="22" name="Escena5-1" tags="" position="2500,700" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;el-reencuentro&quot;&gt;¡El Reencuentro!&lt;/h1&gt;
@@ -865,7 +1348,33 @@ Daniel y Lotso llegaron a la escuela un rato después de haber atravesado la con
 
 (align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Fin]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="23" name="Escena5-2" tags="" position="2500,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="23" name="Escena5-2" tags="" position="2500,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;encontrando-a-papa&quot;&gt;Encontrando a Papá&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;encontrando-a-papa&quot;&gt;
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[Daniel comenzó a correr a lo largo del camino que le había señalado la vendedora, sosteniendo a Lotso en una de sus manos y rogando que pudiera ver a su padre en cualquier momento. ¡Qué gran alegría sintió cuando al doblar una esquina, vio a su papá esperando a que el semáforo cambiara para poder cruzar la calle!]
@@ -884,7 +1393,33 @@ Daniel y Lotso llegaron a la escuela un rato después de haber atravesado la con
 
 (align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Fin]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="24" name="Escena5-3" tags="" position="2500,1100" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="24" name="Escena5-3" tags="" position="2500,1100" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;encontrando-a-mama&quot;&gt;Encontrando a Mamá&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;encontrando-a-mama&quot;&gt;
 Justo como el guardia de seguridad le había indicado, Daniel emprendió una rápida carrera en el camino a casa, sosteniendo a Lotso entre sus manos y rogando que pudiera alcanzar a mamá antes de que surgiera cualquier otro problema que se sumara a su larga lista de experiencias en ese día. Con gran alegría vio, al pasar por un puente para peatones, que su mamá estaba allí, pegando en un poste el cartel con su foto que ya había visto antes. A pesar de que estaba muy cansado, Daniel se acercó más hasta que estuvo seguro de que su mamá podría escucharlo.
@@ -903,10 +1438,36 @@ Justo como el guardia de seguridad le había indicado, Daniel emprendió una rá
 
 (align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Fin]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="25" name="Fin" tags="" position="2800,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="25" name="Fin" tags="" position="2800,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;daniel-llego-a-su-destino&quot;&gt;Daniel ha Llegado a su Destino&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;daniel-llego-a-su-destino&quot;&gt;
-Mamá y papá abrieron las puertas de la casa y entraron cargando a Daniel, quien abrazaba a Lotso con fuerza y daba gracias por haber podido completar su misión de volver a casa, ¡tantas cosas había aprendido! Ciertamente su TDAH llegaría a jugarle malas pasadas de vez en cuando, pero esa no sería la última palabra, pues había entendido que podía superar su distracción e impulsos y además, contaba con el amor de sus padres, los consejos de Lotso y la ayuda de muchos amigos que estarían para él en el presente y el futuro.
+Mamá y papá abrieron las puertas de la casa y entraron cargando a Daniel, quien abrazaba a Lotso con fuerza y daba gracias por haber podido completar su misión de volver a casa, ¡tantas cosas había aprendido! Ciertamente su &lt;span aria-label=&quot;T D A H&quot;&gt;TDAH&lt;/span&gt; llegaría a jugarle malas pasadas de vez en cuando, pero esa no sería la última palabra, pues había entendido que podía superar su distracción e impulsos y además, contaba con el amor de sus padres, los consejos de Lotso y la ayuda de muchos amigos que estarían para él en el presente y el futuro.
 
 (align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://catalinarpos.github.io/daniel-journey/images/daniel-11.png&quot; alt=&quot;Un niño de 8 años abrazando a su mamá y papá, todos sonríen felices&quot;&gt;]
 
@@ -916,16 +1477,67 @@ Mamá y papá abrieron las puertas de la casa y entraron cargando a Daniel, quie
 
 (align:&quot;=&gt;&lt;=&quot;)[[[Volver al Inicio-&gt;Preparación para la historia]]]
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="26" name="Preparación para la historia" tags="" position="100,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="26" name="Preparación para la historia" tags="" position="100,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
   &lt;h1 class=&quot;titulo-principal&quot; id=&quot;viaje-daniel&quot;&gt;El viaje de Daniel&lt;/h1&gt;
   &lt;div role=&quot;region&quot; aria-labelledby=&quot;viaje-daniel&quot;&gt;
     ¡Hola, gracias por jugar con nosotros!
     
-    En esta historia conocerás a Daniel, un niño diagnosticado con &lt;abbr title=&quot;Trastorno por Déficit de Atención e Hiperactividad&quot;&gt;TDAH&lt;/abbr&gt;, y lo acompañarás en su aventura para regresar a casa al lado de su oso de peluche, Lotso, en un camino en el que tendrás que tomar decisiones que afectarán el curso de la historia.
-    
-    (align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena1]]]
-  &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata></tw-storydata>
+    En esta historia conocerás a Daniel, un niño diagnosticado con Trastorno por Déficit de Atención e Hiperactividad (&lt;span aria-label=&quot;T D A H&quot;)&gt;TDAH&lt;/span&gt;), y lo acompañarás en su aventura para regresar a casa al lado de su oso de peluche, Lotso, en un camino en el que tendrás que tomar decisiones que afectarán el curso de la historia.
+    &lt;/div&gt;
+    (align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena1]]]  
+&lt;/main&gt;
+&lt;script&gt;
+(function () {
+  &#39;use strict&#39;;
+  
+  document.querySelectorAll(&quot;main[role=main] &gt; div[role=region]&quot;).forEach(region =&gt; {
+    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  });
+  
+  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
+    link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+  });
+
+  document.addEventListener(&quot;keydown&quot;, e =&gt; {
+    switch (e.key) {
+      case &quot;Enter&quot;:
+      case &quot; &quot;:
+        if (document.activeElement.tagName.toLowerCase() === &quot;tw-link&quot;) {
+          e.preventDefault();
+          document.activeElement.click();
+        }
+        break;
+    }
+  });
+})();
+&lt;/script&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
