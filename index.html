@@ -90,9 +90,8 @@ img {
 &#39;&#39;Lotso:&#39;&#39; Tienes razón, esta será una de las aventuras más importantes de nuestra vida, ¡tenemos una misión! Puede ser que encontremos grandes dificultades en el camino, pero las afrontaremos juntos y eso es lo más importante.
 
 (align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://catalinarpos.github.io/daniel-journey/images/daniel-8.png&quot; alt=&quot;Un niño feliz de 8 años con el pelo castaño parado con un oso rosado en las manos&quot;&gt;]
-
-(align:&quot;=&gt;&lt;=&quot;)[[[¡Continuar!-&gt;Escena3-1]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[¡Continuar!-&gt;Escena3-1]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -118,6 +117,18 @@ img {
         break;
     }
   });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+  
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
+});
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="2" name="E2SB" tags="" position="700,1000" size="100,100">(set: $eligioA to false)
 &lt;main role=&quot;main&quot;&gt;
@@ -146,9 +157,8 @@ img {
 &#39;&#39;Lotso:&#39;&#39; Esto solo significa una cosa, y es que tenemos una nueva misión: ¡volver con mamá y papá! Tal vez encontremos muchas dificultades en el camino, pero ¡mira! Has logrado encontrarme siguiendo el mapa y eso significa que has aprendido una lección nueva, no tienes que hacer todo lo que se te venga a la cabeza inmediatamente, puedes planear algo y concentrarte si te lo propones.
 
 (align:&quot;==&gt;&quot;)+(box:&quot;X&quot;)[Daniel asiente y sonríe, abrazando a Lotso y guardando el mapa nuevamente dentro del collar. Ambos comenzaron a caminar, aceptando el nuevo desafío al que tendrían que enfrentarse y pensando en la alegría que sentirían al volver a ver a mamá y papá.]
-
-(align:&quot;=&gt;&lt;=&quot;)[[[¡Continuar!-&gt;Escena3-2]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[¡Continuar!-&gt;Escena3-2]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -173,6 +183,18 @@ img {
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="3" name="E3SA" tags="" position="1100,800" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -181,9 +203,8 @@ img {
 (align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://catalinarpos.github.io/daniel-journey/images/daniel-22.png&quot; alt=&quot;Un niño serio corriendo con un oso rosado en la mano&quot;&gt;]
 
 &#39;&#39;Daniel:&#39;&#39; (//agarrando con fuerza a Lotso en una de sus manos//) ¡Vamos a correr muy rápido y pasaremos sin que nadie nos vea! Necesitamos llegar a la escuela, mamá y papá todavía pueden estar allá.
-
-(align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos!-&gt;E3SA-2]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos!-&gt;E3SA-2]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -208,6 +229,18 @@ img {
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="4" name="E3SA-2" tags="" position="1300,800" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -228,9 +261,8 @@ Daniel y Lotso empezaron a correr a lo largo del estrecho camino en la construcc
 El trabajador de la obra, con la mayor amabilidad que tenía, tomó a Daniel de la mano y lo ayudó a terminar de cruzar el camino para pasar la obra y llegar a la señal azul donde ya estaría cerca de la escuela. 
 
 Una vez salieron, Daniel le agradeció con una sonrisa y volvió a correr en dirección a la escuela, sin darle tiempo al trabajador de ofrecerle ayuda para buscar a sus padres o llamar a un policía.
-
-(align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena4]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena4]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -255,15 +287,26 @@ Una vez salieron, Daniel le agradeció con una sonrisa y volvió a correr en dir
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="5" name="E3SB" tags="" position="1100,1000" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;una-nueva-idea&quot;&gt;Una Nueva Idea&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;una-nueva-idea&quot;&gt;
 &#39;&#39;Daniel:&#39;&#39; (//sonriendo//) ¡Ya sé qué vamos a hacer, Lotso! Hablaremos con alguien que esté trabajando en la construcción y le pediremos ayuda para pasar el camino, diciéndole que mamá y papá nos están esperando en la escuela y tenemos mucha prisa.
-
-(align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos!-&gt;E3SB-2]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos!-&gt;E3SB-2]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -288,6 +331,18 @@ Una vez salieron, Daniel le agradeció con una sonrisa y volvió a correr en dir
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="6" name="E3SB-2" tags="" position="1300,1000" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -309,9 +364,8 @@ Durante unos breves minutos, Daniel esperó a que alguien apareciera desde la co
 &#39;&#39;Daniel:&#39;&#39; (//abrazando a Lotso//) ¡Muchas gracias, señor! Lotso y yo siempre estaremos muy agradecidos con usted.
 
 Después de la breve conversación, Daniel, Lotso y el trabajador de la construcción cruzaron el estrecho camino con mucho cuidado, sintiéndose más tranquilos a medida que se acercaban a la señal azul y se imaginaban la felicidad de ver nuevamente a mamá y papá. Cuando llegaron al final, Daniel agradeció nuevamente la ayuda y se despidió del noble trabajador, corriendo nuevamente en dirección a la escuela sin darle tiempo a que le dijese nada más o le ofreciera más ayuda. 
-
-(align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena4]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena4]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -336,15 +390,26 @@ Después de la breve conversación, Daniel, Lotso y el trabajador de la construc
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="7" name="E4SA" tags="" position="1700,600" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;vamos-lotso&quot;&gt;¡Vamos, Lotso!&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;vamos-lotso&quot;&gt;
 &#39;&#39;Daniel:&#39;&#39; ¡Lotso, vamos a la tienda de juguetes! Mamá y papá saben lo mucho que me gusta ir allí, nos deben estar esperando. 
-
-(align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos a Jugar!-&gt;E4SA-2]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos a Jugar!-&gt;E4SA-2]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -369,6 +434,18 @@ Después de la breve conversación, Daniel, Lotso y el trabajador de la construc
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="8" name="E4SA-2" tags="" position="1900,500" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -462,7 +539,7 @@ Daniel volvió a sacar el mapa que le habían regalado sus padres y lo extendió
       
   Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
     link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;button&quot;);
 
     link.addEventListener(&quot;keydown&quot;, e =&gt; {
       if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
@@ -470,6 +547,18 @@ Daniel volvió a sacar el mapa que le habían regalado sus padres y lo extendió
         link.click();
       }
     });
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="9" name="E4SA-2-A" tags="" position="2100,400" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -497,9 +586,8 @@ Daniel volvió a sacar el mapa que le habían regalado sus padres y lo extendió
 &#39;&#39;Vendedor:&#39;&#39; Así es, me dijo que se encontraría en casa con tu madre y después llamarían a la policía, en caso de que ella tampoco te hubiera podido encontrar.
 
 (align:&quot;==&gt;&quot;)+(box:&quot;X&quot;)[Daniel le agradeció al vendedor de periódicos por su ayuda y emprendió de nuevo su camino hacia casa, sabiendo que debía llegar rápido antes de que las cosas empeoraran. No fue necesario que observara el mapa, porque el camino a casa era una de las pocas cosas que siempre permanecían presentes en su memoria. Lotso, por su parte, notó un ligero cambio en la expresión de Daniel después de lo que había sucedido: la lección que había aprendido ese día siempre iba a permanecer grabada en su corazón. ]
-
-(align:&quot;=&gt;&lt;=&quot;)[[[Continuar!-&gt;Escena5-1]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[Continuar!-&gt;Escena5-1]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -524,6 +612,18 @@ Daniel volvió a sacar el mapa que le habían regalado sus padres y lo extendió
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="10" name="E4SA-2-B" tags="" position="2100,600" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -540,9 +640,8 @@ Daniel volvió a sacar el mapa que le habían regalado sus padres y lo extendió
 &#39;&#39;Daniel:&#39;&#39; (//con brillo en los ojos//) ¿De veras? Si papá acaba de irse no debe estar muy lejos, correré lo más rápido que pueda y lo alcanzaré para que vayamos juntos a casa. ¿Sabes hacia dónde se fue? 
 
 (align:&quot;==&gt;&quot;)+(box:&quot;X&quot;)[La vendedora señaló con su mano la dirección en la que el padre de Daniel se había ido, a lo que el niño salió corriendo mientras le decía “¡gracias!” con una amplia sonrisa. Daniel abrazó a Lotso con fuerza mientras corría en el conocido camino a casa, sabiendo que su padre estaría a la vuelta de una esquina y pronto volvería a ser feliz.] 
-
-(align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena5-2]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena5-2]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -567,6 +666,18 @@ Daniel volvió a sacar el mapa que le habían regalado sus padres y lo extendió
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="11" name="E4SB" tags="" position="1700,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -575,9 +686,8 @@ Daniel volvió a sacar el mapa que le habían regalado sus padres y lo extendió
 &#39;&#39;Daniel:&#39;&#39; ¡Lotso, vayamos al parque de diversiones! Si mami y papi nos están esperando allá, podríamos jugar un rato todos juntos antes de regresar a casa.
 
 &#39;&#39;Lotso:&#39;&#39; (//sonriendo un poco nervioso//) Ay, Daniel, tú nunca te cansas, ¿verdad? 
-
-(align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos al Parque!-&gt;E4SB-2]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos al Parque!-&gt;E4SB-2]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -602,6 +712,18 @@ Daniel volvió a sacar el mapa que le habían regalado sus padres y lo extendió
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="12" name="E4SB-2" tags="" position="1900,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -699,7 +821,7 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
       
   Array.from(document.getElementsByTagName(&quot;tw-link&quot;))(&quot;tw-link&quot;).forEach(link =&gt; {
     link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;button&quot;);
 
     link.addEventListener(&quot;keydown&quot;, e =&gt; {
       if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
@@ -707,6 +829,18 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
         link.click();
       }
     });
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="13" name="E4SB-2-A" tags="" position="2100,800" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -741,9 +875,8 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
 &#39;&#39;Daniel:&#39;&#39; Señora, ¿puede usted decirme hacia dónde se fue mi mami después de salir de aquí? Quiero seguirla lo más rápido que pueda.
 
 (align:&quot;==&gt;&quot;)+(box:&quot;X&quot;)[La joven trabajadora del parque de diversiones señaló un pequeño camino a la derecha del puesto de entrada, y Daniel y Lotso emprendieron nuevamente una carrera para tratar de llegar a casa antes de que sus padres se hubieran ido a la policía.]
-
-(align:&quot;=&gt;&lt;=&quot;)[[[Continuar!-&gt;Escena5-1]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[Continuar!-&gt;Escena5-1]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -768,6 +901,18 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="14" name="E4SB-2-B" tags="" position="2100,1000" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -788,9 +933,8 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
 &#39;&#39;Lotso:&#39;&#39; ¡Estoy muy orgulloso de ti, Daniel! Sabía que si lograbas concentrarte en nuestro objetivo, regresaríamos a casa mucho más rápido y volveríamos a ver a tus padres. 
 
 (align:&quot;==&gt;&quot;)+(box:&quot;X&quot;)[El guardia de seguridad sacudió con fuerza la mano de Daniel, como dándole ánimo para el trecho de camino que le quedaba por recorrer. Después, le explicó brevemente la ruta que había tomado su mamá, le regaló una pequeña botella de agua para que saciara su sed en cualquier momento y lo despidió con una gran sonrisa, en adelanto a la gran alegría que experimentaría muy pronto.]
-
-(align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena5-3]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena5-3]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -815,15 +959,26 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="15" name="E4SC" tags="" position="1700,1200" size="100,100">&lt;main role=&quot;main&quot;&gt;
 &lt;h1 class=&quot;titulo-principal&quot; id=&quot;una-decision-importante&quot;&gt;Una Decisión Importante&lt;/h1&gt;
 &lt;div role=&quot;region&quot; aria-labelledby=&quot;una-decision-importante&quot;&gt;
 &#39;&#39;Daniel:&#39;&#39; (//pensativo//) ¿Sabes qué, Lotso? Creo que deberíamos ir a casa, seguramente mamá y papá se encontrarán juntos allá y nos estarán esperando, ¡no perdamos más tiempo! 
-
-(align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos a Casa!-&gt;E4SC-2]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[¡Vamos a Casa!-&gt;E4SC-2]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -848,6 +1003,18 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="16" name="E4SC-2" tags="" position="2100,1200" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -858,9 +1025,8 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
 (align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://catalinarpos.github.io/daniel-journey/images/daniel-21.png&quot; alt=&quot;Un niño se imagina a sus padres abrazándolo mientras camina con su oso de peluche&quot;&gt;]
 
 (align:&quot;==&gt;&quot;)+(box:&quot;X&quot;)[Por un momento, pudo imaginar el cálido abrazo de alegría con que lo recibirían mamá y papá al llegar a casa, así que reunió fuerzas y se dispuso a correr una carrera más: la carrera definitiva, aquella de vuelta a su apreciado hogar.]
-
-(align:&quot;=&gt;&lt;=&quot;)[[[¡Continuar!-&gt;Escena5-1]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[¡Continuar!-&gt;Escena5-1]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -885,6 +1051,18 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="17" name="Escena1" tags="" position="300,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -905,9 +1083,8 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
     &#39;&#39;Daniel:&#39;&#39; (//aprieta el dije del collar entre sus dedos//) ¡Sí, mami y papi! Haré mi mejor esfuerzo para ser el niño que está más concentrado en todo el mundo.
 
     (align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://catalinarpos.github.io/daniel-journey/images/daniel-2.png&quot; alt=&quot;Daniel acompañado por su familia&quot;&gt;]
-
-    (align:&quot;=&gt;&lt;=&quot;)[[[Comenzar la historia-&gt;Escena2]]]
-   &lt;/div&gt;  
+   &lt;/div&gt;
+   (align:&quot;=&gt;&lt;=&quot;)[[[Comenzar la historia-&gt;Escena2]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -933,6 +1110,18 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
         break;
     }
   });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
+});
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="18" name="Escena2" tags="" position="500,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
   &lt;h1 class=&quot;titulo-principal&quot; id=&quot;llegando-a-la-plaza&quot;&gt;Llegando a la Plaza de la Ciudad&lt;/h1&gt;
@@ -964,7 +1153,7 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
     
  Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
     link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;button&quot;);
   });
 
   // Aplicar manejador de teclado
@@ -1015,6 +1204,18 @@ Daniel sacó de su collar el mapa que le habían entregado sus padres y lo exten
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 
 })();
@@ -1113,7 +1314,7 @@ Daniel se encontraba muy impaciente por llegar hasta la escuela, pues tal vez su
     
   Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
     link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;button&quot;);
 
     link.addEventListener(&quot;keydown&quot;, e =&gt; {
       if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
@@ -1121,6 +1322,18 @@ Daniel se encontraba muy impaciente por llegar hasta la escuela, pues tal vez su
         link.click();
       }
     });
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="20" name="Escena3-2" tags="" position="900,1100" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -1216,7 +1429,7 @@ Daniel se encontraba muy impaciente por llegar hasta la escuela, pues tal vez su
     
   Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
     link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;button&quot;);
 
     link.addEventListener(&quot;keydown&quot;, e =&gt; {
       if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
@@ -1224,6 +1437,18 @@ Daniel se encontraba muy impaciente por llegar hasta la escuela, pues tal vez su
         link.click();
       }
     });
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="21" name="Escena4" tags="" position="1500,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -1316,7 +1541,7 @@ Daniel y Lotso llegaron a la escuela un rato después de haber atravesado la con
         
   Array.from(document.getElementsByTagName(&quot;tw-link&quot;)).forEach(link =&gt; {
     link.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-    link.setAttribute(&quot;role&quot;, &quot;link&quot;);
+    link.setAttribute(&quot;role&quot;, &quot;button&quot;);
 
     link.addEventListener(&quot;keydown&quot;, e =&gt; {
       if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
@@ -1324,6 +1549,18 @@ Daniel y Lotso llegaron a la escuela un rato después de haber atravesado la con
         link.click();
       }
     });
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
     
 })();
@@ -1345,9 +1582,8 @@ Daniel y Lotso llegaron a la escuela un rato después de haber atravesado la con
 &#39;&#39;Mamá:&#39;&#39; (//abrazándolo con fuerza//) ¡Daniel, mi amor! Tu papá y yo hemos estado tan tristes y asustados sin ti, ahora mismo íbamos a la policía para que nos ayudaran a buscarte. 
 
 &#39;&#39;Papá:&#39;&#39; (//dándole un beso en la frente//) ¡Hijo de mi corazón! Hemos estado en tantos lugares diferentes con la esperanza de encontrarte, que sentía un gran dolor en mi pecho al pensar que te habíamos perdido.
-
-(align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Fin]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Fin]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -1372,6 +1608,18 @@ Daniel y Lotso llegaron a la escuela un rato después de haber atravesado la con
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="23" name="Escena5-2" tags="" position="2500,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -1390,9 +1638,8 @@ Daniel y Lotso llegaron a la escuela un rato después de haber atravesado la con
 &#39;&#39;Daniel:&#39;&#39; Estoy bien, papi, muy cansado pero ahora soy feliz al estar contigo de nuevo. ¡Mira, encontré a Lotso y él me acompañó todo el tiempo! 
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[En un breve instante de tiempo llegaron a casa, donde mamá estaba esperando y saltó de alegría al verlos. Con mucho amor, ella recibió a Daniel entre sus brazos y le dio muchos besos en el rostro, diciéndole lo mucho que lo había extrañado y dando gracias por tener a su esposo y a su hijo de regreso.]
-
-(align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Fin]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Fin]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -1417,6 +1664,18 @@ Daniel y Lotso llegaron a la escuela un rato después de haber atravesado la con
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="24" name="Escena5-3" tags="" position="2500,1100" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -1435,9 +1694,8 @@ Justo como el guardia de seguridad le había indicado, Daniel emprendió una rá
 &#39;&#39;Daniel:&#39;&#39; No, mami, todas las personas que he encontrado han sido muy buenas conmigo, ¡y mira! Lotso me ha acompañado todo este tiempo, sin él no habría podido regresar contigo.
 
 (align:&quot;==&gt;&quot;)+(box:&quot;X&quot;)[Los dos continuaron su camino hasta llegar a casa, cuando de repente vieron al papá de Daniel sentado en la acera, mirando hacia el cielo. Grande fue el salto de alegría cuando los vio en la esquina y salió corriendo a su encuentro, abrazándolos y dando gracias por tener de regreso a su esposa e hijo sanos y salvos.]
-
-(align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Fin]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Fin]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -1462,6 +1720,18 @@ Justo como el guardia de seguridad le había indicado, Daniel emprendió una rá
         }
         break;
     }
+  });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
   });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="25" name="Fin" tags="" position="2800,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
@@ -1474,9 +1744,8 @@ Mamá y papá abrieron las puertas de la casa y entraron cargando a Daniel, quie
 (align:&quot;==&gt;&quot;)+(box:&quot;X&quot;)[Daniel les cuenta a sus padres sobre las personas que conoció en el camino y, juntos, empiezan a escribir un diario en el que Daniel guardaría todas sus memorias sobre ese inesperado día, además de las estrategias que había aprendido para enfrentar sus impulsos y distracciones: respirar y tranquilizarse, pensar un plan, pedir ayuda y tomar una decisión; todas esas acciones, aunque pequeñas, habían tenido un gran impacto en él y serían atesoradas por siempre como valiosos aprendizajes que recordaría durante toda su vida.]
 
 &#39;&#39;Lotso:&#39;&#39; ¡Gracias por tu compañía en esta aventura! Sin tu ayuda no habríamos logrado volver a nuestro hogar. Ahora que comprendes mejor lo que sucede en la cabeza de un niño con TDAH, espero que seas más comprensivo y puedas brindar tu ayuda cuando se presenten dificultades. ¡No lo olvides, para el que cree, todo es posible!
-
-(align:&quot;=&gt;&lt;=&quot;)[[[Volver al Inicio-&gt;Preparación para la historia]]]
 &lt;/div&gt;
+(align:&quot;=&gt;&lt;=&quot;)[[[Volver al Inicio-&gt;Preparación para la historia]]]
 &lt;/main&gt;
 &lt;script&gt;
 (function () {
@@ -1502,13 +1771,25 @@ Mamá y papá abrieron las puertas de la casa y entraron cargando a Daniel, quie
         break;
     }
   });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
+  });
 })();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="26" name="Preparación para la historia" tags="" position="100,900" size="100,100">&lt;main role=&quot;main&quot;&gt;
   &lt;h1 class=&quot;titulo-principal&quot; id=&quot;viaje-daniel&quot;&gt;El viaje de Daniel&lt;/h1&gt;
   &lt;div role=&quot;region&quot; aria-labelledby=&quot;viaje-daniel&quot;&gt;
     ¡Hola, gracias por jugar con nosotros!
     
-    En esta historia conocerás a Daniel, un niño diagnosticado con Trastorno por Déficit de Atención e Hiperactividad (&lt;span aria-label=&quot;T D A H&quot;)&gt;TDAH&lt;/span&gt;), y lo acompañarás en su aventura para regresar a casa al lado de su oso de peluche, Lotso, en un camino en el que tendrás que tomar decisiones que afectarán el curso de la historia.
+    En esta historia conocerás a Daniel, un niño diagnosticado con Trastorno por Déficit de Atención e Hiperactividad (&lt;span aria-label=&quot;T D A H&quot;&gt;TDAH&lt;/span&gt;), y lo acompañarás en su aventura para regresar a casa al lado de su oso de peluche, Lotso, en un camino en el que tendrás que tomar decisiones que afectarán el curso de la historia.
     &lt;/div&gt;
     (align:&quot;=&gt;&lt;=&quot;)[[[Continuar-&gt;Escena1]]]  
 &lt;/main&gt;
@@ -1536,6 +1817,18 @@ Mamá y papá abrieron las puertas de la casa y entraron cargando a Daniel, quie
         break;
     }
   });
+  
+  document.querySelectorAll(&quot;tw-sidebar *&quot;).forEach(el =&gt; {
+  el.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
+  el.setAttribute(&quot;role&quot;, &quot;button&quot;);
+  
+  el.addEventListener(&quot;keydown&quot;, e =&gt; {
+    if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) {
+      e.preventDefault();
+      el.click();
+    }
+  });
+});
 })();
 &lt;/script&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
