@@ -109,13 +109,7 @@ p {
 (function () {
   &#39;use strict&#39;;
   
-  document.querySelectorAll(&quot;h1&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;p&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;img&quot;).forEach(region =&gt; {
+  document.querySelectorAll(&quot;h1, p, img, span&quot;).forEach(region =&gt; {
     region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
   });
 
@@ -180,13 +174,7 @@ p {
 (function () {
   &#39;use strict&#39;;
   
-  document.querySelectorAll(&quot;h1&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;p&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;img&quot;).forEach(region =&gt; {
+  document.querySelectorAll(&quot;h1, p, img, span&quot;).forEach(region =&gt; {
     region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
   });
   
@@ -402,13 +390,7 @@ p {
 (function () {
   &#39;use strict&#39;;
   
-  document.querySelectorAll(&quot;h1&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;p&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;img&quot;).forEach(region =&gt; {
+  document.querySelectorAll(&quot;h1, p, img, span&quot;).forEach(region =&gt; {
     region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
   });
   
@@ -509,8 +491,8 @@ p {
 
 &lt;h2&gt;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[(text-style:&quot;bold&quot;)[¿Qué hará Daniel después de haber visto al nuevo astronauta en la vitrina de la tienda de juguetes?]]&lt;/h2&gt;
 &lt;div class=&quot;opciones&quot;&gt;
-[[Opción A:-&gt;E4SA-2-A]]  Daniel entra a la tienda para ver más de cerca el juguete, olvidando por un momento su misión de averiguar si alguno de sus padres lo había estado buscando en algún lugar cercano.
-&lt;hr&gt;[[Opción B:-&gt;E4SA-2-B]] A pesar de su gran interés por el nuevo astronauta, Daniel decide no entrar a la tienda de juguetes y comienza a preguntar en los alrededores si alguien había estado buscando un niño, ya que no alcanza a ver a ninguno de sus padres en los alrededores.
+[[Opción A:-&gt;E4SA-2-A]]  &lt;p&gt;Daniel entra a la tienda para ver más de cerca el juguete, olvidando por un momento su misión de averiguar si alguno de sus padres lo había estado buscando en algún lugar cercano.&lt;/p&gt;
+&lt;hr&gt;[[Opción B:-&gt;E4SA-2-B]] &lt;p&gt;A pesar de su gran interés por el nuevo astronauta, Daniel decide no entrar a la tienda de juguetes y comienza a preguntar en los alrededores si alguien había estado buscando un niño, ya que no alcanza a ver a ninguno de sus padres en los alrededores.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/main&gt;
 
@@ -696,13 +678,7 @@ p {
 (function () {
   &#39;use strict&#39;;
   
-  document.querySelectorAll(&quot;h1&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;p&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;img&quot;).forEach(region =&gt; {
+  document.querySelectorAll(&quot;h1, p, img, span&quot;).forEach(region =&gt; {
     region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
   });
   
@@ -803,13 +779,13 @@ p {
 
 &lt;h2&gt;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[(text-style:&quot;bold&quot;)[¿Qué hará Daniel después de descubrir que puede subir a la montaña rusa más impresionante que ha visto? ]]&lt;/h2&gt;
 &lt;div class = &quot;opciones&quot;&gt;
-[[Opción A:-&gt;E4SB-2-A]] Daniel decide entrar al parque de diversiones y subir a la montaña rusa, olvidando por un momento el objetivo de su misión de regresar a casa.
+[[Opción A:-&gt;E4SB-2-A]] &lt;p&gt;Daniel decide entrar al parque de diversiones y subir a la montaña rusa, olvidando por un momento el objetivo de su misión de regresar a casa.&lt;/p&gt;
 &lt;hr&gt;
 (if: $eligioA is true)[
-[[Opción B:-&gt;E4SB-2-B]] Daniel recuerda los consejos que ha recibido de parte de la niña de sombrero colorido y toma la decisión de no subir a la montaña rusa sino continuar en la búsqueda de sus padres.
+[[Opción B:-&gt;E4SB-2-B]] &lt;p&gt;Daniel recuerda los consejos que ha recibido de parte de la niña de sombrero colorido y toma la decisión de no subir a la montaña rusa sino continuar en la búsqueda de sus padres.&lt;/p&gt;
 ]
 (else:)[
-[[Opción B:-&gt;E4SB-2-B]] Daniel recuerda los consejos que ha recibido de parte de mamá y papá y toma la decisión de no subir a la montaña rusa sino continuar en la búsqueda de sus padres.
+[[Opción B:-&gt;E4SB-2-B]] &lt;p&gt;Daniel recuerda los consejos que ha recibido de parte de mamá y papá y toma la decisión de no subir a la montaña rusa sino continuar en la búsqueda de sus padres.&lt;/p&gt;
 ]
 &lt;/div&gt;
 &lt;/main&gt;
@@ -946,13 +922,7 @@ p {
 (function () {
   &#39;use strict&#39;;
   
-  document.querySelectorAll(&quot;h1&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;p&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;img&quot;).forEach(region =&gt; {
+  document.querySelectorAll(&quot;h1, p, img, span&quot;).forEach(region =&gt; {
     region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
   });
   
@@ -1158,7 +1128,7 @@ p {
 
     (align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://catalinarpos.github.io/daniel-journey/images/daniel-3.png&quot; alt=&quot;Niño de 8 años corriendo tras una aves en el parque&quot;&gt;]
     &lt;p&gt;&#39;&#39;Madre:&#39;&#39; Mi amor, por favor recuerda que (text-style:&quot;italic&quot;,&quot;underline&quot;)[no debes hacer todo lo que se te pase por la cabeza al mismo tiempo, puedes esperar y ver si es algo que realmente necesitas hacer]. Quédate a nuestro lado, nos preocupamos mucho por ti.&lt;/p&gt;
-   &lt;p&gt; &#39;&#39;Padre:&#39;&#39; (//extiende su mano sosteniendo un collar//) Te vamos a regalar este collar especial, ¡guárdalo bien! Dentro encontrarás un mapa para volver a casa, úsalo en cualquier momento que lo necesites [le pone el collar a Daniel].&lt;/p&gt;
+   &lt;p&gt; &#39;&#39;Padre:&#39;&#39; (//extiende su mano sosteniendo un collar//) Te vamos a regalar este collar especial, ¡guárdalo bien! Dentro encontrarás un mapa para volver a casa, úsalo en cualquier momento que lo necesites (//le pone el collar a Daniel//).&lt;/p&gt;
     &lt;p&gt;&#39;&#39;Daniel:&#39;&#39; (//aprieta el dije del collar entre sus dedos//) ¡Sí, mami y papi! Haré mi mejor esfuerzo para ser el niño que está más concentrado en todo el mundo.&lt;/p&gt;
     (align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://catalinarpos.github.io/daniel-journey/images/daniel-2.png&quot; alt=&quot;Daniel acompañado por su familia&quot;&gt;]
    (align:&quot;=&gt;&lt;=&quot;)[[[Comenzar la historia-&gt;Escena2]]]
@@ -1167,13 +1137,7 @@ p {
 (function () {
   &#39;use strict&#39;;
   
-  document.querySelectorAll(&quot;h1&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;p&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;img&quot;).forEach(region =&gt; {
+  document.querySelectorAll(&quot;h1, p, img&quot;).forEach(region =&gt; {
     region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
   });
   
@@ -1217,9 +1181,9 @@ p {
     (align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://catalinarpos.github.io/daniel-journey/images/daniel-5.png&quot; alt=&quot;un niño de 8 años preocupado, que se da cuenta que olvido su oso en el camino&quot;&gt;]
     &lt;h2&gt;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[(text-style:&quot;bold&quot;)[¿Cuál es la siguiente acción de Daniel después de darse cuenta que perdió a Lotso?]]&lt;/h2&gt; 
     &lt;div class=&quot;opciones&quot;&gt;
-        [[Opción A:-&gt;E2SA]] Daniel sale corriendo de manera impulsiva en dirección opuesta al recorrido, atravesando la plaza de la ciudad y tratando de recordar dónde fue el último lugar donde vio a Lotso y llamándolo de forma desesperada.
+        [[Opción A:-&gt;E2SA]] &lt;p&gt;Daniel sale corriendo de manera impulsiva en dirección opuesta al recorrido, atravesando la plaza de la ciudad y tratando de recordar dónde fue el último lugar donde vio a Lotso y llamándolo de forma desesperada.&lt;/p&gt;
         &lt;hr&gt;
-        [[Opción B:-&gt;E2SB]] Daniel sale corriendo hacia la fuente central de la plaza, esperando que ese sea el lugar donde haya perdido a Lotso. A mitad del camino se detiene, recordando lo que le dijeron sus padres sobre permanecer tranquilo y pensar en lo que va a hacer.
+        [[Opción B:-&gt;E2SB]] &lt;p&gt;Daniel sale corriendo hacia la fuente central de la plaza, esperando que ese sea el lugar donde haya perdido a Lotso. A mitad del camino se detiene, recordando lo que le dijeron sus padres sobre permanecer tranquilo y pensar en lo que va a hacer.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/main&gt;
 &lt;script&gt;
@@ -1227,16 +1191,7 @@ p {
   &#39;use strict&#39;;
 
   // Se pueda hacer focus
-  document.querySelectorAll(&quot;h1&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;h2&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;p&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;img&quot;).forEach(region =&gt; {
+  document.querySelectorAll(&quot;h1, p, img, span, h2&quot;).forEach(region =&gt; {
     region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
   });
     
@@ -1332,8 +1287,8 @@ p {
 
 &lt;h2&gt;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[(text-style:&quot;bold&quot;)[¿Cuál es la siguiente acción de Daniel frente a la calle cerrada por la construcción?]]&lt;/h2&gt;
 &lt;div class=&quot;opciones&quot;&gt;
-[[Opción A:-&gt;E3SA]] Daniel corre e intenta cruzar el camino restringido solo, esperando que nadie se dé cuenta y pueda continuar hacia la señal azul que está más adelante.
-&lt;hr&gt;[[Opción B:-&gt;E3SB]] En ese momento, Daniel recuerda los cuatro pasos que le había enseñado la niña en la plaza de la ciudad, y mirando los colores de su chaqueta, trató de permanecer calmado y elaboró un pequeño plan para pasar por el camino restringido sin necesidad de dar la vuelta por la calle de la derecha.
+[[Opción A:-&gt;E3SA]] &lt;p&gt;Daniel corre e intenta cruzar el camino restringido solo, esperando que nadie se dé cuenta y pueda continuar hacia la señal azul que está más adelante.&lt;/p&gt;
+&lt;hr&gt;[[Opción B:-&gt;E3SB]] &lt;p&gt;En ese momento, Daniel recuerda los cuatro pasos que le había enseñado la niña en la plaza de la ciudad, y mirando los colores de su chaqueta, trató de permanecer calmado y elaboró un pequeño plan para pasar por el camino restringido sin necesidad de dar la vuelta por la calle de la derecha.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/main&gt;
 
@@ -1342,16 +1297,7 @@ p {
   &#39;use strict&#39;;
   
   // Se pueda hacer focus
-  document.querySelectorAll(&quot;h1&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;h2&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;p&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;img&quot;).forEach(region =&gt; {
+  document.querySelectorAll(&quot;h1, p, img, span, h2&quot;).forEach(region =&gt; {
     region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
   });
 
@@ -1454,8 +1400,8 @@ p {
 
 &lt;h2&gt;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[(text-style:&quot;bold&quot;)[¿Cuál es la siguiente acción de Daniel frente a la calle cerrada por la construcción?]]&lt;/h2&gt;
 &lt;div class = &quot;opciones&quot;&gt;
-[[Opción A:-&gt;E3SA]] Daniel corre e intenta cruzar el camino restringido solo, esperando que nadie se dé cuenta y pueda continuar hacia la señal azul que está más adelante.
-&lt;hr&gt;[[Opción B:-&gt;E3SB]] A pesar de que que estaba muy impaciente, Daniel trató de permanecer tranquilo recordando los consejos que le habían dado mamá y papá y pensó un pequeño plan para pasar por el camino restringido sin necesidad de dar la vuelta por la calle de la derecha.
+[[Opción A:-&gt;E3SA]] &lt;p&gt;Daniel corre e intenta cruzar el camino restringido solo, esperando que nadie se dé cuenta y pueda continuar hacia la señal azul que está más adelante.&lt;/p&gt;
+&lt;hr&gt;[[Opción B:-&gt;E3SB]] &lt;p&gt;A pesar de que que estaba muy impaciente, Daniel trató de permanecer tranquilo recordando los consejos que le habían dado mamá y papá y pensó un pequeño plan para pasar por el camino restringido sin necesidad de dar la vuelta por la calle de la derecha.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/main&gt;
 
@@ -1517,16 +1463,7 @@ p {
   });
   
   // Se pueda hacer focus
-  document.querySelectorAll(&quot;h1&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;h2&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;p&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;img&quot;).forEach(region =&gt; {
+  document.querySelectorAll(&quot;h1, p, img, span, h2&quot;).forEach(region =&gt; {
     region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
   });
     
@@ -1566,9 +1503,9 @@ p {
 
 &lt;h2&gt;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[(text-style:&quot;bold&quot;)[¿Cuál es el siguiente lugar al que deberían dirigirse Daniel y Lotso para encontrar a mamá y papá?]]&lt;/h2&gt;
 &lt;div class = &quot;opciones&quot;&gt;
-[[Opción A:-&gt;E4SA]] Dirigirse a la tienda de juguetes.
-&lt;hr&gt;[[Opción B:-&gt;E4SB]] Dirigirse al parque de diversiones.
-&lt;hr&gt;[[Opción C:-&gt;E4SC]] Dirigirse a casa.
+[[Opción A:-&gt;E4SA]] &lt;span&gt;Dirigirse a la tienda de juguetes.&lt;/span&gt;
+&lt;hr&gt;[[Opción B:-&gt;E4SB]] &lt;span&gt;Dirigirse al parque de diversiones.&lt;/span&gt;
+&lt;hr&gt;[[Opción C:-&gt;E4SC]] &lt;span&gt;Dirigirse a casa.&lt;/span&gt;
 &lt;/div&gt;
 &lt;/main&gt;
 
@@ -1636,16 +1573,7 @@ p {
   });
   
   // Se pueda hacer focus
-  document.querySelectorAll(&quot;h1&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;h2&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;p&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;img&quot;).forEach(region =&gt; {
+  document.querySelectorAll(&quot;h1, p, img, span, h2&quot;).forEach(region =&gt; {
     region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
   });
         
@@ -1757,13 +1685,7 @@ p {
 (function () {
   &#39;use strict&#39;;
   
-  document.querySelectorAll(&quot;h1&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;p&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;img&quot;).forEach(region =&gt; {
+  document.querySelectorAll(&quot;h1, p, img, span&quot;).forEach(region =&gt; {
     region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
   });
   
@@ -1817,13 +1739,7 @@ p {
 (function () {
   &#39;use strict&#39;;
   
-  document.querySelectorAll(&quot;h1&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;p&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;img&quot;).forEach(region =&gt; {
+  document.querySelectorAll(&quot;h1, p, img, span&quot;).forEach(region =&gt; {
     region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
   });
   
@@ -1921,13 +1837,7 @@ p {
 (function () {
   &#39;use strict&#39;;
   
-  document.querySelectorAll(&quot;h1&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;p&quot;).forEach(region =&gt; {
-    region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
-  });
-  document.querySelectorAll(&quot;img&quot;).forEach(region =&gt; {
+  document.querySelectorAll(&quot;h1, p, img&quot;).forEach(region =&gt; {
     region.setAttribute(&quot;tabindex&quot;, &quot;0&quot;);
   });
   

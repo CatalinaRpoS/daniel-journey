@@ -54,13 +54,7 @@ El viaje de Daniel
 (function () {
   'use strict';
   
-  document.querySelectorAll("h1").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("p").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("img").forEach(region => {
+  document.querySelectorAll("h1, p, img, span").forEach(region => {
     region.setAttribute("tabindex", "0");
   });
 
@@ -129,13 +123,7 @@ El viaje de Daniel
 (function () {
   'use strict';
   
-  document.querySelectorAll("h1").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("p").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("img").forEach(region => {
+  document.querySelectorAll("h1, p, img, span").forEach(region => {
     region.setAttribute("tabindex", "0");
   });
   
@@ -367,13 +355,7 @@ El viaje de Daniel
 (function () {
   'use strict';
   
-  document.querySelectorAll("h1").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("p").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("img").forEach(region => {
+  document.querySelectorAll("h1, p, img, span").forEach(region => {
     region.setAttribute("tabindex", "0");
   });
   
@@ -482,8 +464,8 @@ El viaje de Daniel
 
 <h2>(align:"=><=")+(box:"X")[(text-style:"bold")[¿Qué hará Daniel después de haber visto al nuevo astronauta en la vitrina de la tienda de juguetes?]]</h2>
 <div class="opciones">
-[[Opción A:->E4SA-2-A]]  Daniel entra a la tienda para ver más de cerca el juguete, olvidando por un momento su misión de averiguar si alguno de sus padres lo había estado buscando en algún lugar cercano.
-<hr>[[Opción B:->E4SA-2-B]] A pesar de su gran interés por el nuevo astronauta, Daniel decide no entrar a la tienda de juguetes y comienza a preguntar en los alrededores si alguien había estado buscando un niño, ya que no alcanza a ver a ninguno de sus padres en los alrededores.
+[[Opción A:->E4SA-2-A]]  <p>Daniel entra a la tienda para ver más de cerca el juguete, olvidando por un momento su misión de averiguar si alguno de sus padres lo había estado buscando en algún lugar cercano.</p>
+<hr>[[Opción B:->E4SA-2-B]] <p>A pesar de su gran interés por el nuevo astronauta, Daniel decide no entrar a la tienda de juguetes y comienza a preguntar en los alrededores si alguien había estado buscando un niño, ya que no alcanza a ver a ninguno de sus padres en los alrededores.</p>
 </div>
 </main>
 
@@ -677,13 +659,7 @@ El viaje de Daniel
 (function () {
   'use strict';
   
-  document.querySelectorAll("h1").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("p").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("img").forEach(region => {
+  document.querySelectorAll("h1, p, img, span").forEach(region => {
     region.setAttribute("tabindex", "0");
   });
   
@@ -792,13 +768,13 @@ El viaje de Daniel
 
 <h2>(align:"=><=")+(box:"X")[(text-style:"bold")[¿Qué hará Daniel después de descubrir que puede subir a la montaña rusa más impresionante que ha visto? ]]</h2>
 <div class = "opciones">
-[[Opción A:->E4SB-2-A]] Daniel decide entrar al parque de diversiones y subir a la montaña rusa, olvidando por un momento el objetivo de su misión de regresar a casa.
+[[Opción A:->E4SB-2-A]] <p>Daniel decide entrar al parque de diversiones y subir a la montaña rusa, olvidando por un momento el objetivo de su misión de regresar a casa.</p>
 <hr>
 (if: $eligioA is true)[
-[[Opción B:->E4SB-2-B]] Daniel recuerda los consejos que ha recibido de parte de la niña de sombrero colorido y toma la decisión de no subir a la montaña rusa sino continuar en la búsqueda de sus padres.
+[[Opción B:->E4SB-2-B]] <p>Daniel recuerda los consejos que ha recibido de parte de la niña de sombrero colorido y toma la decisión de no subir a la montaña rusa sino continuar en la búsqueda de sus padres.</p>
 ]
 (else:)[
-[[Opción B:->E4SB-2-B]] Daniel recuerda los consejos que ha recibido de parte de mamá y papá y toma la decisión de no subir a la montaña rusa sino continuar en la búsqueda de sus padres.
+[[Opción B:->E4SB-2-B]] <p>Daniel recuerda los consejos que ha recibido de parte de mamá y papá y toma la decisión de no subir a la montaña rusa sino continuar en la búsqueda de sus padres.</p>
 ]
 </div>
 </main>
@@ -939,13 +915,7 @@ El viaje de Daniel
 (function () {
   'use strict';
   
-  document.querySelectorAll("h1").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("p").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("img").forEach(region => {
+  document.querySelectorAll("h1, p, img, span").forEach(region => {
     region.setAttribute("tabindex", "0");
   });
   
@@ -1167,7 +1137,7 @@ El viaje de Daniel
 
     (align:"=><=")[<img src="https://catalinarpos.github.io/daniel-journey/images/daniel-3.png" alt="Niño de 8 años corriendo tras una aves en el parque">]
     <p>''Madre:'' Mi amor, por favor recuerda que (text-style:"italic","underline")[no debes hacer todo lo que se te pase por la cabeza al mismo tiempo, puedes esperar y ver si es algo que realmente necesitas hacer]. Quédate a nuestro lado, nos preocupamos mucho por ti.</p>
-   <p> ''Padre:'' (//extiende su mano sosteniendo un collar//) Te vamos a regalar este collar especial, ¡guárdalo bien! Dentro encontrarás un mapa para volver a casa, úsalo en cualquier momento que lo necesites [le pone el collar a Daniel].</p>
+   <p> ''Padre:'' (//extiende su mano sosteniendo un collar//) Te vamos a regalar este collar especial, ¡guárdalo bien! Dentro encontrarás un mapa para volver a casa, úsalo en cualquier momento que lo necesites (//le pone el collar a Daniel//).</p>
     <p>''Daniel:'' (//aprieta el dije del collar entre sus dedos//) ¡Sí, mami y papi! Haré mi mejor esfuerzo para ser el niño que está más concentrado en todo el mundo.</p>
     (align:"=><=")[<img src="https://catalinarpos.github.io/daniel-journey/images/daniel-2.png" alt="Daniel acompañado por su familia">]
    (align:"=><=")[[[Comenzar la historia->Escena2]]]
@@ -1176,13 +1146,7 @@ El viaje de Daniel
 (function () {
   'use strict';
   
-  document.querySelectorAll("h1").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("p").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("img").forEach(region => {
+  document.querySelectorAll("h1, p, img").forEach(region => {
     region.setAttribute("tabindex", "0");
   });
   
@@ -1230,9 +1194,9 @@ El viaje de Daniel
     (align:"=><=")[<img src="https://catalinarpos.github.io/daniel-journey/images/daniel-5.png" alt="un niño de 8 años preocupado, que se da cuenta que olvido su oso en el camino">]
     <h2>(align:"=><=")+(box:"X")[(text-style:"bold")[¿Cuál es la siguiente acción de Daniel después de darse cuenta que perdió a Lotso?]]</h2> 
     <div class="opciones">
-        [[Opción A:->E2SA]] Daniel sale corriendo de manera impulsiva en dirección opuesta al recorrido, atravesando la plaza de la ciudad y tratando de recordar dónde fue el último lugar donde vio a Lotso y llamándolo de forma desesperada.
+        [[Opción A:->E2SA]] <p>Daniel sale corriendo de manera impulsiva en dirección opuesta al recorrido, atravesando la plaza de la ciudad y tratando de recordar dónde fue el último lugar donde vio a Lotso y llamándolo de forma desesperada.</p>
         <hr>
-        [[Opción B:->E2SB]] Daniel sale corriendo hacia la fuente central de la plaza, esperando que ese sea el lugar donde haya perdido a Lotso. A mitad del camino se detiene, recordando lo que le dijeron sus padres sobre permanecer tranquilo y pensar en lo que va a hacer.
+        [[Opción B:->E2SB]] <p>Daniel sale corriendo hacia la fuente central de la plaza, esperando que ese sea el lugar donde haya perdido a Lotso. A mitad del camino se detiene, recordando lo que le dijeron sus padres sobre permanecer tranquilo y pensar en lo que va a hacer.</p>
     </div>
 </main>
 <script>
@@ -1240,16 +1204,7 @@ El viaje de Daniel
   'use strict';
 
   // Se pueda hacer focus
-  document.querySelectorAll("h1").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("h2").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("p").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("img").forEach(region => {
+  document.querySelectorAll("h1, p, img, span, h2").forEach(region => {
     region.setAttribute("tabindex", "0");
   });
     
@@ -1349,8 +1304,8 @@ El viaje de Daniel
 
 <h2>(align:"=><=")+(box:"X")[(text-style:"bold")[¿Cuál es la siguiente acción de Daniel frente a la calle cerrada por la construcción?]]</h2>
 <div class="opciones">
-[[Opción A:->E3SA]] Daniel corre e intenta cruzar el camino restringido solo, esperando que nadie se dé cuenta y pueda continuar hacia la señal azul que está más adelante.
-<hr>[[Opción B:->E3SB]] En ese momento, Daniel recuerda los cuatro pasos que le había enseñado la niña en la plaza de la ciudad, y mirando los colores de su chaqueta, trató de permanecer calmado y elaboró un pequeño plan para pasar por el camino restringido sin necesidad de dar la vuelta por la calle de la derecha.
+[[Opción A:->E3SA]] <p>Daniel corre e intenta cruzar el camino restringido solo, esperando que nadie se dé cuenta y pueda continuar hacia la señal azul que está más adelante.</p>
+<hr>[[Opción B:->E3SB]] <p>En ese momento, Daniel recuerda los cuatro pasos que le había enseñado la niña en la plaza de la ciudad, y mirando los colores de su chaqueta, trató de permanecer calmado y elaboró un pequeño plan para pasar por el camino restringido sin necesidad de dar la vuelta por la calle de la derecha.</p>
 </div>
 </main>
 
@@ -1359,16 +1314,7 @@ El viaje de Daniel
   'use strict';
   
   // Se pueda hacer focus
-  document.querySelectorAll("h1").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("h2").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("p").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("img").forEach(region => {
+  document.querySelectorAll("h1, p, img, span, h2").forEach(region => {
     region.setAttribute("tabindex", "0");
   });
 
@@ -1475,8 +1421,8 @@ El viaje de Daniel
 
 <h2>(align:"=><=")+(box:"X")[(text-style:"bold")[¿Cuál es la siguiente acción de Daniel frente a la calle cerrada por la construcción?]]</h2>
 <div class = "opciones">
-[[Opción A:->E3SA]] Daniel corre e intenta cruzar el camino restringido solo, esperando que nadie se dé cuenta y pueda continuar hacia la señal azul que está más adelante.
-<hr>[[Opción B:->E3SB]] A pesar de que que estaba muy impaciente, Daniel trató de permanecer tranquilo recordando los consejos que le habían dado mamá y papá y pensó un pequeño plan para pasar por el camino restringido sin necesidad de dar la vuelta por la calle de la derecha.
+[[Opción A:->E3SA]] <p>Daniel corre e intenta cruzar el camino restringido solo, esperando que nadie se dé cuenta y pueda continuar hacia la señal azul que está más adelante.</p>
+<hr>[[Opción B:->E3SB]] <p>A pesar de que que estaba muy impaciente, Daniel trató de permanecer tranquilo recordando los consejos que le habían dado mamá y papá y pensó un pequeño plan para pasar por el camino restringido sin necesidad de dar la vuelta por la calle de la derecha.</p>
 </div>
 </main>
 
@@ -1538,16 +1484,7 @@ El viaje de Daniel
   });
   
   // Se pueda hacer focus
-  document.querySelectorAll("h1").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("h2").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("p").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("img").forEach(region => {
+  document.querySelectorAll("h1, p, img, span, h2").forEach(region => {
     region.setAttribute("tabindex", "0");
   });
     
@@ -1591,9 +1528,9 @@ El viaje de Daniel
 
 <h2>(align:"=><=")+(box:"X")[(text-style:"bold")[¿Cuál es el siguiente lugar al que deberían dirigirse Daniel y Lotso para encontrar a mamá y papá?]]</h2>
 <div class = "opciones">
-[[Opción A:->E4SA]] Dirigirse a la tienda de juguetes.
-<hr>[[Opción B:->E4SB]] Dirigirse al parque de diversiones.
-<hr>[[Opción C:->E4SC]] Dirigirse a casa.
+[[Opción A:->E4SA]] <span>Dirigirse a la tienda de juguetes.</span>
+<hr>[[Opción B:->E4SB]] <span>Dirigirse al parque de diversiones.</span>
+<hr>[[Opción C:->E4SC]] <span>Dirigirse a casa.</span>
 </div>
 </main>
 
@@ -1661,16 +1598,7 @@ El viaje de Daniel
   });
   
   // Se pueda hacer focus
-  document.querySelectorAll("h1").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("h2").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("p").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("img").forEach(region => {
+  document.querySelectorAll("h1, p, img, span, h2").forEach(region => {
     region.setAttribute("tabindex", "0");
   });
         
@@ -1790,13 +1718,7 @@ El viaje de Daniel
 (function () {
   'use strict';
   
-  document.querySelectorAll("h1").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("p").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("img").forEach(region => {
+  document.querySelectorAll("h1, p, img, span").forEach(region => {
     region.setAttribute("tabindex", "0");
   });
   
@@ -1854,13 +1776,7 @@ El viaje de Daniel
 (function () {
   'use strict';
   
-  document.querySelectorAll("h1").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("p").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("img").forEach(region => {
+  document.querySelectorAll("h1, p, img, span").forEach(region => {
     region.setAttribute("tabindex", "0");
   });
   
@@ -1966,13 +1882,7 @@ El viaje de Daniel
 (function () {
   'use strict';
   
-  document.querySelectorAll("h1").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("p").forEach(region => {
-    region.setAttribute("tabindex", "0");
-  });
-  document.querySelectorAll("img").forEach(region => {
+  document.querySelectorAll("h1, p, img").forEach(region => {
     region.setAttribute("tabindex", "0");
   });
   
